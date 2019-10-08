@@ -40,7 +40,7 @@
         "quantidade" => $livro2->getQtdEmEstoque(),
         "capaBrochura" => $livro2->getTemCapaBrochura() 
     );
-    print_r($livrosComedia);
+    //print_r($livrosComedia);
 ?>
 </pre>
 <div class="container galeria">
