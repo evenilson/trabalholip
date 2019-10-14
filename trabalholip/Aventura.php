@@ -6,8 +6,8 @@ class Aventura extends Livro{
     private $ilustracoes = array();
 
     //contrutor de aventura
-    public function __construct($id,$nome,$valor,$qtdEmEstoque, $ilustracoes){
-        parent::__construct($id,$nome,$valor,$qtdEmEstoque);
+    public function __construct($nome,$valor,$qtdEmEstoque, $ilustracoes){
+        parent::__construct($nome,$valor,$qtdEmEstoque);
         $this->ilustracoes = $ilustracoes;
     }
 

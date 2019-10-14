@@ -4,8 +4,8 @@ class Comedia extends Livro{
     private $temCapaBrochura;
 
     //contrutor de aventura
-    public function __construct($id,$nome,$valor,$qtdEmEstoque, $temCapaBrochura){
-        parent::__construct($id,$nome,$valor,$qtdEmEstoque);
+    public function __construct($nome,$valor,$qtdEmEstoque, $temCapaBrochura){
+        parent::__construct($nome,$valor,$qtdEmEstoque);
         $this->temCapaBrochura = $temCapaBrochura;
     }
 
@@ -18,4 +18,3 @@ class Comedia extends Livro{
         $this->temCapaBrochura = $temCapaBrochura;            
     }
 }
-?>

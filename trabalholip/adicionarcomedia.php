@@ -17,34 +17,34 @@
     <div class="row">
         <div class="col-sm-6 center">
         
-        <form class="text-center border border-dark p-5" action="destino.php" method="post">
+        <form class="text-center border border-dark p-5" action="ManipulaComedia.php" method="post">
 
         <p class="h4 mb-4">Cadastro: livro de Comédia</p>
 
         <!-- Nome -->
-        <input type="text" id="nome" name="nome" class="form-control mb-4" placeholder="Nome">
+        <input type="text" id="nome" name="nome" class="form-control mb-4" placeholder="Nome" >
 
         <div class="form-row mb-4">
             <div class="col">
                 <!-- Valor -->
-                <input type="text" id="nome" name="valor" class="form-control" onKeyPress="return(moeda(this,'.',',',event))" placeholder="Valor">
+                <input type="text" id="valor" name="valor" class="form-control" onKeyPress="return(moeda(this,'.',',',event))" placeholder="Valor">
             </div>
             <div class="col">
                 <!-- Quantidade -->
-                <input type="text" id="nome" nome="quantidade" class="form-control" placeholder="Quantidade">
+                <input type="text" id="quantidade" name="quantidade" class="form-control" placeholder="Quantidade">
             </div>
         </div>
 
         <!-- Tem capa brochura -->
         <div class="form-check ">
             <input class="form-check-input" type="radio" name="temCapaBrochura" id="temCapaBrochura" value="sim" checked>
-            <label class="form-check-label" for="temCapadura">
+            <label class="form-check-label" for="temCapaBrochura">
                 Tem capa brochura
             </label>
             </div>
             <div class="form-check">
             <input class="form-check-input " type="radio" name="temCapaBrochura" id="temCapaBrochura" value="não">
-            <label class="form-check-label" for="temCapaDura">
+            <label class="form-check-label" for="temCapaBrochura">
                 Não tem capa brochura
             </label>
         </div>
