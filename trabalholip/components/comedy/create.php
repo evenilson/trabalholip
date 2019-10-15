@@ -1,6 +1,6 @@
 <?php 
 require_once 'Comedia.php';
-require_once 'conexaobanco.php';
+require_once '../../config/conexaobanco.php';
 
 $conectador = conexao();
 
