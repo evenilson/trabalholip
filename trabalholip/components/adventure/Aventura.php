@@ -1,33 +1,24 @@
 <?php
-   require_once 'Livro.php';
 
-   class Aventura extends Livro{
-      private $ilustracoes = array();
+require_once 'Livro.php';
 
-      //contrutor de aventura
-      public function __construct($nome,$valor,$qtdEmEstoque, $ilustracoes){
-         parent::__construct($nome,$valor,$qtdEmEstoque);
-         $this->ilustracoes = $ilustracoes;
-      }
+class Aventura extends Livro{
+    private $ilustracoes;
 
-      //criando geters
-      public function getIlustracoes(){
-         return $this->ilustracoes;
-      }
+    //contrutor de aventura
+    public function __construct($nome,$valor,$qtdEmEstoque, $ilustracoes){
+        parent::__construct($nome,$valor,$qtdEmEstoque);
+        $this->ilustracoes = $ilustracoes;
+    }
 
-      //criando seters
-      public function setIlustracoes($ilustracoes){
-         $this->ilustracoes = $ilustracoes;            
-      }
-      public function adicionarLivro($livro, $arrayLivros){
-         $arrayLivros = ($livro);
-      }
-      public function venderLivro(){
+    //criando geters
+    public function getIlustracoes(){
+        return $this->ilustracoes;
+    }
 
-      }
-      public function consultarEstoque(){
+    //criando seters
+    public function setIlustracoes($ilustracoes){
+        $this->ilustracoes = $ilustracoes;            
+    }
 
-      }
-
-   }
-?>
+}

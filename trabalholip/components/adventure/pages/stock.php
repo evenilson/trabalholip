@@ -24,7 +24,6 @@
                 <th>Nome</th>
                 <th>Preço</th> 
                 <th>Quantidade</th> 
-                <th>Capa dura</th> 
             </thead>
             <tbody>
                 <?php 
@@ -33,9 +32,8 @@
                         echo '<tr>';
                         echo '<td>'. $linha['id_aventura'] .'</td>';
                         echo '<td>'. $linha['nome'] .'</td>';
-                        echo '<td>'. $linha['valor'] .'</td>';
+                        echo '<td>'.'R$ '. $linha['valor']. ',00'.'</td>';
                         echo '<td>'. $linha['quantidade'] .'</td>';
-                        echo '<td>'. $linha['capa_dura'] .'</td>';
                         echo '</tr>';   
                     }
                     mysqli_close($conectador);
