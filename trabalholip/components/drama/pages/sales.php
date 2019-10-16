@@ -1,7 +1,7 @@
 <?php
    require_once '../../../config/conexaobanco.php';
    $conectador = conexao();
-   $sql = "SELECT * FROM comedia";
+   $sql = "SELECT * FROM drama";
    $resultado = mysqli_query($conectador, $sql);
 ?>
 
@@ -37,7 +37,7 @@
       <div class="container">
          <div class="header text-center">
             <h1>Vender livros</h1>
-            <p>Comédia</p>
+            <p>Drama</p>
             <a class="btn btn-primary btn-sm" href="../../../pages/venderLivro.php">Selecionar outro gênero</a>
             <a class="btn btn-info btn-sm" href="../../../index.php">Home</a>
             <a class="btn btn-secondary btn-sm" href="../../../pages/adicionarLivro.php">Adicionar mais livros</a>
@@ -50,31 +50,31 @@
                         <th>Nome</th>
                         <th>Preço</th> 
                         <th>Quantidade</th> 
-                        <th>Capa brochura</th>
+                        <th>Capa dura</th>
                         <th>Vender</th> 
                   </thead>
                   <tbody>
                      <?php while($linha = $resultado->fetch_array()){ ?>
                         <tr>
-                           <td><?php echo $linha['id_comedia'] ?></td>
+                           <td><?php echo $linha['id_drama'] ?></td>
                            <td><?php echo $linha['nome'] ?></td>
                            <td>R$ <?php echo $linha['valor'] ?>,00</td>
                            <td><?php echo $linha['quantidade'] ?></td>
-                           <td><?php echo $linha['capa_brochura'] ?></td>
+                           <td><?php echo $linha['capa_dura'] ?></td>
                            <td>
                               <?php  
                                  if($linha['quantidade'] == 0){
                                     echo '<button type="button" style="cursor: not-allowed;" class="btn btn-primary disabled"><i class="fas fa-dollar-sign"></i></button>';
                                  }else{
                               ?>
-                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalVender<?php echo $linha['id_comedia'] ?>"><i class="fas fa-dollar-sign"></i></button>   
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalVender<?php echo $linha['id_drama'] ?>"><i class="fas fa-dollar-sign"></i></button>   
                               <?php
                                  }
                               ?>
                            </td>
                         </tr>
                         <!-- Modal -->
-                        <div class="modal fade" id="modalVender<?php echo $linha['id_comedia'] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="modalVender<?php echo $linha['id_drama'] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                            <div class="modal-dialog" role="document">
                               <div class="modal-content">
                                  <div class="modal-header text-center">
@@ -88,7 +88,7 @@
                                        <div class="col-md-6">
                                           <div class="form-group">
                                              <label for="qtd">Código</label>
-                                             <input type="number" class="form-control" name="id_comedia" value="<?php echo $linha['id_comedia'] ?>" readonly=“true”>
+                                             <input type="number" class="form-control" name="id_drama" value="<?php echo $linha['id_drama'] ?>" readonly=“true”>
                                           </div>
                                        </div>
                                        <div class="col-md-6">
@@ -117,6 +117,7 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
    <script src="../../../assets/js/dataTable.js"></script>  
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>  
    <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>

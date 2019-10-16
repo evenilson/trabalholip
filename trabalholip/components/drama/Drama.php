@@ -1,5 +1,5 @@
 <?php
-   require_once 'Livro.php';
+   require_once '../book/Livro.php';
    class Drama extends Livro{
       private $temCapaDura;
       

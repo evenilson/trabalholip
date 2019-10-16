@@ -1,6 +1,6 @@
 <?php
 
-require_once 'Livro.php';
+require_once '../book/Livro.php';
 
 class Aventura extends Livro{
     private $ilustracoes;

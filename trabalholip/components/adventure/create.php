@@ -35,4 +35,4 @@ for ($row = 0; $row < $size; $row++) {
 
 mysqli_close($conectador);
 
-header("Location: estoqueaventura.php");
+header("Location: ../../pages/adicionarLivro.php");

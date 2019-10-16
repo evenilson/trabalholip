@@ -2,6 +2,10 @@ body{
     background-color: white;
 }
 
+.header{
+   padding: 3rem;
+}
+
 .menu{
     display: flex;
     justify-content: space-between;

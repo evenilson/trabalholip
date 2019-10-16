@@ -17,4 +17,4 @@ $sql = "INSERT INTO comedia (nome, valor, quantidade, capa_brochura) VALUES ('$n
 mysqli_query($conectador, $sql) or die ("Erro ao tentar registrar o cadastro");
 mysqli_close($conectador);
 
-header("Location: estoquecomedia.php");
+header("Location: ../../pages/adicionarLivro.php");

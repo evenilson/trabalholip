@@ -1,6 +1,6 @@
 <?php 
 require_once 'Drama.php';
-require_once 'conexaobanco.php';
+require_once '../../config/conexaobanco.php';
 
 $conectador = conexao();
 
@@ -17,4 +17,4 @@ $sql = "INSERT INTO drama (nome, valor, quantidade, capa_dura) VALUES ('$nome', 
 mysqli_query($conectador, $sql) or die ("Erro ao tentar registrar o cadastro");
 mysqli_close($conectador);
 
-header("Location: estoquecomedia.php");
+header("Location: ../../pages/adicionarLivro.php");

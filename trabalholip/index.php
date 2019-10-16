@@ -26,7 +26,7 @@
       </nav>
 
       <div class="container">
-         <div class="jumbotron">
+         <div class="header text-center">
             <h1>YODA<strong>Livravia</strong></h1>
             <h5>Funcionalidades</h5>
          </div> 
@@ -35,11 +35,11 @@
                   <div class="container">
                      <div>
                         <a class="card-options" href="pages/adicionarLivro.php">
-                              <div><img class="img-card" src="assets/img/add.svg" alt=""></div>
-                              <div class="title"><span>Adicionar Livros</span></div>
-                              <div class="details">
-                                 <span class="badge badge-success">11 adicionados</span>
-                              </div>
+                           <div><img class="img-card" src="assets/img/add.svg" alt=""></div>
+                           <div class="title"><span>Adicionar Livros</span></div>
+                              <!--<div class="details">
+                                 <span class="badge badge-info">11 adicionados</span>
+                              </div>-->
                         </a>
                      </div>
                   </div>
@@ -48,11 +48,8 @@
                   <div class="container">
                      <div>
                         <a class="card-options" href="pages/venderLivro.php">
-                              <div><img class="img-card" src="assets/img/buy.svg" alt=""></div>
-                              <div class="title"><span>Vender Livros</span></div>
-                              <div class="details">
-                                 <span class="badge badge-success">22 vendidos</span>
-                              </div>
+                           <div><img class="img-card" src="assets/img/buy.svg" alt=""></div>
+                           <div class="title"><span>Vender Livros</span></div>
                         </a>
                      </div>
                   </div>
@@ -61,11 +58,8 @@
                   <div class="container">
                      <div>
                         <a class="card-options" href="pages/verEstoque.php">
-                              <div><img class="img-card" src="assets/img/stock.svg" alt=""></div>
-                              <div class="title"><span>Ver Estoque</span></div>
-                              <div class="details">
-                                 <span class="badge badge-success">147 livros</span>
-                              </div>
+                           <div><img class="img-card" src="assets/img/stock.svg" alt=""></div>
+                           <div class="title"><span>Ver Estoque</span></div>
                         </a>
                      </div>
                   </div>
